@@ -173,12 +173,12 @@ header{
     border: none;
 }
 .add-project-btn{
-    background-color: rgb(103, 226, 103);
-    cursor: pointer;
+    background-color: rgba(118, 244, 118, 0.596);
+
 }
 .cancel-project-btn{
-    background-color: rgb(244, 121, 121);
-    cursor: pointer;
+    background-color: rgba(247, 72, 72, 0.588);
+
 
 }
 .task-adder{
@@ -206,6 +206,50 @@ header{
     border: none;
     inset: 1;
     
+}
+#modal2{
+    background-color: #c2e3a2;
+}
+#modal2 > div > p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+#modal2 > div > label{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+#modal2 > div > select{
+    margin-top: 0.4rem;
+    width: 100%;
+    padding: 0.7rem 0.3rem;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+}
+#modal2 > div > button{
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+.button-container-modal2{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.task-priority-input{
+    margin-bottom: 0.8rem;
+}
+#modal2 > div > input{
+    width: 100%;
+    padding: 0.6rem 0.3rem;
+    outline: none;
+    border: none;
+    margin-bottom: 0.6rem;
+    font-size: 1.4rem;
+    border-radius: 0.2rem;
 }
 dialog::backdrop{
     background: rgba(0,0,0,0.7);

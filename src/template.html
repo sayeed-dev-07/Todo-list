@@ -69,18 +69,17 @@
                 <i class="fa-solid fa-plus"></i>
                 <p>Add Task</p>
             </div>
-            <dialog>
-                <form>
+            <dialog id="modal2" class="modal" >
                     <div class="task-name-input">
-                        <p>Name</p>
+                        <p>Name:</p>
                         <input type="text">
                     </div>
                     <div class="task-description-input">
-                        <p>Description</p>
+                        <p>Description:</p>
                         <input type="text">
                     </div>
                     <div class="task-priority-input">
-                        <label for="priority">Priority</label>
+                        <label for="priority">Priority:</label>
                         <select name="priority" id="priority">
                             <option value="low">Low</option>
                             <option value="medium">Medium</option>
@@ -88,16 +87,17 @@
                         </select>
                     </div>
                     <div class="due">
-                        <p>due</p>
+                        <p>Due:</p>
                         <input type="date">
                     </div>
-                    <button class="add-btn">Add</button>
-                    <button class="cancel-btn">Cancel</button>
-                </form>
+                    <div class="button-container-modal2">
+                        <button class="add-btn add-project-btn">Add</button>
+                    <button class="cancel-btn cancel-project-btn">Cancel</button>
+                    </div>
             </dialog>
             
             <!-- details dialog -->
-            <dialog class="modal">
+            <dialog id="modal1" class="modal">
                 <div class="task-details">
                     <div class="task-name">
                         <p>Name : </p>
