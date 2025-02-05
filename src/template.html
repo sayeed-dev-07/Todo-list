@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo list Project</title>
+    <script src="https://kit.fontawesome.com/08b0047d25.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <p>hello world</p>
+    <header>
+        <div class="logo">
+            <img src="/public/todo.png" alt="">
+        </div>
+        <div class="project-name-title">Todo List</div>
+    </header>
+    <main class="container">
+        <div class="left-container">
+            <div class="tasks">
+                <i class="fa-solid fa-list-check"></i>
+                <p>Tasks</p>
+            </div>
+            <div class="projects">
+                <p>Projects</p>
+                <div class="project-catalog">
+                    <div class="project-inner">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <p class="project-name">Demo</p>
+                    </div>
+                    <div class="project-inner">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <p class="project-name">sayeed</p>
+                    </div>
+                </div>
+                <div class="add-project">
+                    <i class="fa-solid fa-plus"></i>
+                    <p>Add Project</p>
+                </div>
+                <div class="get-input-project ">
+                    <input id="project-name-input" type="text">
+                    <div class="button-container-project">
+                        <button type="submit" class="add-project-btn">Add</button>
+                        <button class="cancel-project-btn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <p class="title">Task</p>
+            <div class="task-container">
+                <div class="task">
+                    <div class="task-inner-div">
+                        <input id="checkbox" type="checkbox">
+                        <p>swimming</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="details">Details</button>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="task-adder">
+                <i class="fa-solid fa-plus"></i>
+                <p>Add Task</p>
+            </div>
+            <dialog>
+                <form>
+                    <div class="task-name-input">
+                        <p>Name</p>
+                        <input type="text">
+                    </div>
+                    <div class="task-description-input">
+                        <p>Description</p>
+                        <input type="text">
+                    </div>
+                    <div class="task-priority-input">
+                        <label for="priority">Priority</label>
+                        <select name="priority" id="priority">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <div class="due">
+                        <p>due</p>
+                        <input type="date">
+                    </div>
+                    <button class="add-btn">Add</button>
+                    <button class="cancel-btn">Cancel</button>
+                </form>
+            </dialog>
+            
+            <!-- details dialog -->
+            <dialog class="modal">
+                <div class="task-details">
+                    <div class="task-name">
+                        <p>Name : </p>
+                        <span>swimming with Lorem,</span>
+                    </div>
+                    <div class="task-description">
+                        <p>Description : </p>
+                        <span>i have to go swimming with them my family</span>
+                    </div>
+                    <div class="priority-show">
+                        <p>Priority : </p>
+                        <span>high</span>
+                    </div>
+                    <div class="date-due">
+                        <p>Due : </p>
+                        <span class="date-span"></span>
+                    </div>
+                    <div class="center-button">
+                        <button class="modal-close">Close</button>
+                    </div>
+                </div>
+            </dialog>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>

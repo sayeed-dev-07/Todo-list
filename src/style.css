@@ -1,7 +1,227 @@
-p{
-    color: crimson;
-    font-size: 4rem;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box; 
 }
-body{
+
+html, body {
+    background-color: #80ffd4;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+button{
+    cursor: pointer;
+}
+/* header style */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 10vh;
+    width:100%;
+    background-color: crimson;
+    padding: 4rem  8rem;
+    gap: 2rem;
+
+}
+.logo > img{
+    height: 60px;
+    cursor: pointer;
+}
+.project-name-title{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.container{
+    display: flex;
+    background-color: aquamarine;
+    width:100vw ;
+}
+.left-container{
+    width: 20%;
+    background-color: rgb(149, 173, 126);
+    padding: 3rem 3rem;
+    min-height: calc(100vh - calc(10vh + 2.7rem));
+
+}
+.right-container{
+    width: 80%;
+    text-align: start;
+    padding: 2rem 12%;
+}
+.task-details  > div > p{
+    display: inline;
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    
+}
+.task-details > div{
+    margin-bottom: 1rem;
+}
+.task-details > div > span{
+    font-size: 1.3rem;
+    
+}
+
+.task-name{
+    margin-bottom: 0.3rem;
+}
+
+.title{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.task{
+    display: flex;
+    padding: 1.3rem 3rem;
+    width: calc(100% - 6rem);
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(207, 207, 164);
+    margin: 0.5rem 0rem;
+    
+}
+.task-inner-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    font-size: 1.5rem;
+}
+.task-inner-div input[type=checkbox]{
+    transform: scale(2);
+}
+
+
+.tasks{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    
+}
+.tasks i{
+    font-size: 1.4rem;
+}
+.tasks p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.projects > p{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1.3rem 0;
+}
+.project-inner{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.6rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.task{
+    margin-bottom: 0.8rem;
+}
+
+.project-inner  i{
+    font-size: 1.2rem;
+}
+.add-project {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    margin: 2rem 0;
+}
+.get-input-project{
+    margin-left: -1.2rem;
+
+}
+.button-container-project{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5.9rem;
+}
+#project-name-input{
+    font-size: 1.2rem;
+    width: 85%;
+    padding: 0.7rem 1rem;
+    outline: none;
+    border-radius: 0.3rem;
+    border: none;
+    margin-bottom: 0.3rem;
+}
+.button-container-project > button{
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    border: none;
+
+}
+.button-container > button{
+    padding: 0.6rem 1.2rem;
+    border: none;
+}
+.add-project-btn{
+    background-color: rgb(103, 226, 103);
+    cursor: pointer;
+}
+.cancel-project-btn{
+    background-color: rgb(244, 121, 121);
+    cursor: pointer;
+
+}
+.task-adder{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.6rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    
+}
+.task-adder >  i {
+    font-size: 1.3rem;
+}
+.task-adder >  p {
+    font-size: 1.3rem;
+}
+.modal{
+    width: 360px;
+    padding: 1.5rem 2rem;
+    margin: auto auto;
     background-color: skyblue;
+    color: black;
+    border-radius: 1rem;
+    border: none;
+    inset: 1;
+    
+}
+dialog::backdrop{
+    background: rgba(0,0,0,0.7);
+}
+.center-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-close{
+    padding: 0.7rem 2rem;
+    border: none;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 0.6rem;
+}
+.hidden{
+    display: none;
 }
