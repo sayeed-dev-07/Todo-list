@@ -91,6 +91,7 @@ header{
     justify-content: center;
     gap: 1.2rem;
     font-size: 1.5rem;
+    height: 50px;
 }
 .task-inner-div input[type=checkbox]{
     transform: scale(2);
@@ -253,6 +254,15 @@ header{
 }
 dialog::backdrop{
     background: rgba(0,0,0,0.7);
+}
+.taskName{
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.task-inner-div > p > span{
+    font-weight: 600;
 }
 .center-button{
     display: flex;

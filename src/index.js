@@ -26,7 +26,6 @@ addProjectNameBtn.addEventListener('click',()=>{
         return;
     }
     createProject(value);
-   
 })
 
 cancelProjectNameBtn.addEventListener('click',()=>{
@@ -38,16 +37,15 @@ cancelProjectNameBtn.addEventListener('click',()=>{
 
 
 
-const modal = document.querySelector('.modal')
-let date = new Date();
-let newDate = format(date, 'dd/MM/yyyy');
+const modal = document.querySelector('#modal1')
+
 
 const detailsBtn = document.querySelector('.details')
 const modalCloseBtn = document.querySelector('.modal-close')
 const dateSpan = document.querySelector('.date-span');
 
 detailsBtn.addEventListener('click',()=>{
-    dateSpan.textContent = `${newDate}`
+    // dateSpan.textContent = `${newDate}`
     modal.showModal();
 })
 modalCloseBtn.addEventListener('click',()=>{
