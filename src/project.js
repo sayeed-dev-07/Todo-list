@@ -1,5 +1,7 @@
-export default class Project{
-    constructor(name){
-        this.name = name;
-    }
+let createProject =  function(name){
+    let projectName = name;
+    let tasks = [];
+    return {projectName, tasks}
 }
+
+export {createProject};

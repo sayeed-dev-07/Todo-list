@@ -1,13 +1,9 @@
-const taskContainer = document.querySelector('.task-container')
-const title = document.querySelector('.title')
-export default class Task{
-    constructor(name, description, priority, date){
-        this.name = name;
-        this.description = description;
-        this.priority = priority;
-        this.date = date;
-    }
-    createNewTask(projectName){
-        
-    }
+const taskCreate = function(name, description, priority, date){
+    let taskName = name;
+    let taskDescription = description;
+    let taskPriority = priority;
+    let taskDate = date;
+
+    return {taskName, taskDescription, taskPriority, taskDate}
 }
+export{taskCreate};

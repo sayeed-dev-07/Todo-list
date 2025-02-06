@@ -86,3 +86,6 @@ const addBtnModal2 = document.querySelector('#submitBtn')
 const cancelBtnModal2 = document.querySelector('.cancel-project-btn')
 
 
+const allProjects = document.querySelectorAll('.project-inner')
+
+// allProjects.forEach()

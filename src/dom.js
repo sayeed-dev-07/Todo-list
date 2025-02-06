@@ -2,7 +2,7 @@ const projectCatalog = document.querySelector('.project-catalog')
 
 
 
-export default function createProject(name){
+export default function createProjectName(name){
     const div = document.createElement('div')
     div.classList.add('project-inner');
     div.innerHTML = `
@@ -28,12 +28,12 @@ function appendChild(child, parent){
 const taskName = document.querySelector('.taskName');
 const date = document.querySelector('.date');
 const priority = document.querySelector('.priorityP')
-function addDetailsToModal(name, description, date, priority){
+
+
+function createDemoTasks(){
+    const task = document.createElement('div')
+    task.classList.add()
 
 }
-function addDetailsToDom(name, date, priority){
-
-}
-
 
 
