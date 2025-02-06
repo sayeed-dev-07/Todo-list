@@ -269,3 +269,7 @@ dialog::backdrop{
 .hidden{
     display: none;
 }
+.selected > * {
+    color: rgb(17, 120, 17);
+    transform: scale(1.2);
+}
