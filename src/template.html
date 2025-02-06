@@ -17,7 +17,7 @@
     </header>
     <main class="container">
         <div class="left-container">
-            <div class="tasks selected">
+            <div class="tasks">
                 <i class="fa-solid fa-list-check"></i>
                 <p>Tasks</p>
             </div>
@@ -27,14 +27,12 @@
                     <div class="project-inner">
                         <div class="project-icon">
                             <i class="fa-solid fa-user-check"></i>
+                            <p class="project-name">Demo</p>
                         </div>
-                        <p class="project-name">Demo</p>
-                    </div>
-                    <div class="project-inner selected">
-                        <div class="project-icon">
-                            <i class="fa-solid fa-user-check"></i>
+                        
+                        <div class="delete-icon">
+                            <i class="fa-solid fa-trash-can"></i>
                         </div>
-                        <p class="project-name">sayeed</p>
                     </div>
                 </div>
                 <div class="add-project">
@@ -55,63 +53,66 @@
             <div class="task-container">
                 <div class="task">
                     <div class="task-inner-div">
-                        <input id="checkbox" type="checkbox">
-                        <p class="taskName">swimming with my brother for a reason swimming with my brother for a reason</p>
-                        <p class="date"><span>Due:</span>24/04/5</p>
-                        <p class="priorityP"><span>Priority:</span>High</p>
-                    </div>
-                    <div class="button-container">
-                        <button class="details">Details</button>
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
+                            <input id="checkbox" type="checkbox">
+                            <p class="taskName">swimming with my brother for a reason swimming with my brother for a
+                                reason</p>
+                            <p class="date"><span>Due:</span>24/04/5</p>
+                            <p class="priorityP"><span>Priority:</span>High</p>
+                        </div>
+                        <div class="button-container">
+                            <button class="details">Details</button>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="task-adder">
-                <i class="fa-solid fa-plus"></i>
-                <p>Add Task</p>
-            </div>
-            <dialog id="modal2" class="modal" >
-                    <div class="task-name-input">
-                        <p>Name:</p>
-                        <input type="text">
+                    <div class="task-adder">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>Add Task</p>
                     </div>
-                    <div class="task-description-input">
-                        <p>Description:</p>
-                        <input type="text">
-                    </div>
-                    <div class="task-priority-input">
-                        <label for="priority">Priority:</label>
-                        <select name="priority" id="priority">
-                            <option value="low">Low</option>
-                            <option value="medium">Medium</option>
-                            <option value="high">High</option>
-                        </select>
-                    </div>
-                    <div class="due">
-                        <p>Due:</p>
-                        <input type="date">
-                    </div>
-                    <div class="button-container-modal2">
-                        <button class="add-btn add-project-btn">Add</button>
-                    <button class="cancel-btn cancel-project-btn">Cancel</button>
-                    </div>
-            </dialog>
+                </div>
             
+            <dialog type="form" id="modal2" class="modal">
+                <div class="task-name-input">
+                    <p>Name:</p>
+                    <input required id="name-input" type="text">
+                </div>
+                <div class="task-description-input">
+                    <p>Description:</p>
+                    <input required id="description-input" type="text">
+                </div>
+                <div class="task-priority-input">
+                    <label for="priority">Priority:</label>
+                    <select required name="priority" id="priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="due">
+                    <p>Due:</p>
+                    <input required id="dateInput" type="date">
+                </div>
+                <div class="button-container-modal2">
+                    <button id="submitBtn" type="submit" class="add-btn add-project-btn">Add</button>
+                    <button class="cancel-btn cancel-project-btn">Cancel</button>
+                </div>
+            </dialog>
+
             <!-- details dialog -->
             <dialog id="modal1" class="modal">
                 <div class="task-details">
                     <div class="task-name">
                         <p>Name : </p>
-                        <span>swimming with Lorem,</span>
+                        <span class="taskName-span">swimming with Lorem,</span>
                     </div>
                     <div class="task-description">
                         <p>Description : </p>
-                        <span>i have to go swimming with them my family</span>
+                        <span class="descriptionName-span">i have to go swimming with them my family</span>
                     </div>
                     <div class="priority-show">
                         <p>Priority : </p>
-                        <span>high</span>
+                        <span class="priorityName-span">high</span>
                     </div>
                     <div class="date-due">
                         <p>Due : </p>

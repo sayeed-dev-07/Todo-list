@@ -1,6 +1,7 @@
 import style from './style.css'
-import { format } from "date-fns";
+import { format, formatDate } from "date-fns";
 import createProject from './dom';
+import { da } from 'date-fns/locale';
 
 
 
@@ -26,6 +27,8 @@ addProjectNameBtn.addEventListener('click',()=>{
         return;
     }
     createProject(value);
+    addProjectBtn.classList.remove('hidden')
+    getInputProject.classList.add('hidden')
 })
 
 cancelProjectNameBtn.addEventListener('click',()=>{
@@ -45,9 +48,41 @@ const modalCloseBtn = document.querySelector('.modal-close')
 const dateSpan = document.querySelector('.date-span');
 
 detailsBtn.addEventListener('click',()=>{
-    // dateSpan.textContent = `${newDate}`
+    
     modal.showModal();
 })
 modalCloseBtn.addEventListener('click',()=>{
     modal.close();
 })
+
+
+
+
+const taskName = document.querySelector('.taskName-span')
+const descriptionName = document.querySelector('.descriptionName-span')
+const date = document.querySelector('.date-span')
+const prioritySpan = document.querySelector('.priorityName-span')
+
+const interfaceTaskName = document.querySelector('.taskName')
+const interfacedateName = document.querySelector('.date')
+const priorityP = document.querySelector('.priorityP')
+
+
+const taskContainer = document.querySelector('.task')
+
+
+const taskAdder = document.querySelector('.task-adder')
+const nameInput = document.querySelector('#name-input')
+const descriptionInput = document.querySelector('#description-input')
+const dateInput = document.querySelector('#dateInput')
+const modal2 = document.querySelector('#modal2')
+
+
+taskAdder.addEventListener('click',()=>{
+    modal2.showModal();
+})
+
+const addBtnModal2 = document.querySelector('#submitBtn')
+const cancelBtnModal2 = document.querySelector('.cancel-project-btn')
+
+

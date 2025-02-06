@@ -8,8 +8,12 @@ export default function createProject(name){
     div.innerHTML = `
     <div class="project-icon">
                             <i class="fa-solid fa-user-check"></i>
+                            <p class="project-name">${name}</p>
                         </div>
-                        <p class="project-name">${name}</p>
+                        <div class="delete-icon">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                        
     `
     appendChild(div, projectCatalog)
 
@@ -30,4 +34,6 @@ function addDetailsToModal(name, description, date, priority){
 function addDetailsToDom(name, date, priority){
 
 }
+
+
 
