@@ -1,0 +1,5 @@
+local storage >
+    1. add projects and value;
+    2. get project and value;
+    3. delete project and value
+    4. edit values;

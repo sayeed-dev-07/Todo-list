@@ -1,7 +1,7 @@
-let createProject =  function(name){
+let projectFactory =  function(name){
     let projectName = name;
     let tasks = [];
     return {projectName, tasks}
 }
 
-export {createProject};
+export {projectFactory};
