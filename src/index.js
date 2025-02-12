@@ -3,6 +3,8 @@ import { format, formatDate } from "date-fns";
 import createProject from './dom';
 import { da } from 'date-fns/locale';
 
+const selectedProject = document.querySelector('.selected')
+
 
 
 // project add 
