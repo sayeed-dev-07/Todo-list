@@ -1,29 +1,29 @@
 import style from './style.css'
 import { format, formatDate } from "date-fns";
 import createProject from './dom';
-import { da } from 'date-fns/locale';
 
 const selectedProject = document.querySelector('.selected')
-
-
-
-// project add 
-
 const addProjectBtn = document.querySelector('.add-project');
 const getInputProject = document.querySelector('.get-input-project');
 const addProjectNameBtn = document.querySelector('.add-project-btn')
 const cancelProjectNameBtn = document.querySelector('.cancel-project-btn')
 
-addProjectBtn.addEventListener('click',()=>{
+
+// project add 
+
+
+
+
+addProjectBtn.addEventListener('click', () => {
     addProjectBtn.classList.add('hidden')
     getInputProject.classList.remove('hidden')
 })
 
-addProjectNameBtn.addEventListener('click',()=>{
-    let projectNameInput =  document.querySelector('#project-name-input')
+addProjectNameBtn.addEventListener('click', () => {
+    let projectNameInput = document.querySelector('#project-name-input')
     let value = projectNameInput.value;
     projectNameInput.value = ''
-    
+
     if (value.trim() === '') {
         alert('project name cant be blank')
         return;
@@ -33,11 +33,10 @@ addProjectNameBtn.addEventListener('click',()=>{
     getInputProject.classList.add('hidden')
 })
 
-cancelProjectNameBtn.addEventListener('click',()=>{
+cancelProjectNameBtn.addEventListener('click', () => {
     addProjectBtn.classList.remove('hidden')
     getInputProject.classList.add('hidden')
 })
-
 
 
 
@@ -49,11 +48,11 @@ const detailsBtn = document.querySelector('.details')
 const modalCloseBtn = document.querySelector('.modal-close')
 const dateSpan = document.querySelector('.date-span');
 
-detailsBtn.addEventListener('click',()=>{
-    
+detailsBtn.addEventListener('click', () => {
+
     modal.showModal();
 })
-modalCloseBtn.addEventListener('click',()=>{
+modalCloseBtn.addEventListener('click', () => {
     modal.close();
 })
 
@@ -80,7 +79,7 @@ const dateInput = document.querySelector('#dateInput')
 const modal2 = document.querySelector('#modal2')
 
 
-taskAdder.addEventListener('click',()=>{
+taskAdder.addEventListener('click', () => {
     modal2.showModal();
 })
 
