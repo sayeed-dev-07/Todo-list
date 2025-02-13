@@ -158,6 +158,9 @@ header{
     justify-content: start;
     gap: 5.9rem;
 }
+#checkbox{
+    cursor: pointer;
+}
 #project-name-input{
     font-size: 1.2rem;
     width: 85%;
@@ -193,6 +196,18 @@ header{
 
 
 }
+.notice{
+    text-align: start;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 2rem;
+    
+}
+.formTitle{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
 .task-adder{
     display: flex;
     align-items: center;
@@ -200,6 +215,7 @@ header{
     gap: 0.6rem;
     margin-left: 0.5rem;
     cursor: pointer;
+    margin-top: 2rem;
     
 }
 .task-adder >  i {

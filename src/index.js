@@ -48,13 +48,13 @@ const detailsBtn = document.querySelector('.details')
 const modalCloseBtn = document.querySelector('.modal-close')
 const dateSpan = document.querySelector('.date-span');
 
-detailsBtn.addEventListener('click', () => {
+// detailsBtn.addEventListener('click', () => {
 
-    modal.showModal();
-})
-modalCloseBtn.addEventListener('click', () => {
-    modal.close();
-})
+//     modal.showModal();
+// })
+// modalCloseBtn.addEventListener('click', () => {
+//     modal.close();
+// })
 
 
 
