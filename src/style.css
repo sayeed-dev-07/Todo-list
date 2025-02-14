@@ -238,16 +238,16 @@ header{
 #modal2{
     background-color: #c2e3a2;
 }
-#modal2 > div > p{
+#form > div > p{
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
-#modal2 > div > label{
+#form > div > label{
     font-size: 1.2rem;
     font-weight: 500;
 }
-#modal2 > div > select{
+#form > div > select{
     margin-top: 0.4rem;
     width: 100%;
     padding: 0.7rem 0.3rem;
@@ -255,7 +255,7 @@ header{
     border: none;
     outline: none;
 }
-#modal2 > div > button{
+#form > div > button{
     padding: 0.7rem 1.2rem;
     font-size: 1rem;
     border: none;
@@ -270,7 +270,7 @@ header{
 .task-priority-input{
     margin-bottom: 0.8rem;
 }
-#modal2 > div > input{
+#form > div > input{
     width: 100%;
     padding: 0.6rem 0.3rem;
     outline: none;

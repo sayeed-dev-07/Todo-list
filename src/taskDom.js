@@ -61,14 +61,35 @@ const taskCreateFactory = ()=>{
     function closeModal(){
         const modal = document.querySelector('#modal2');
         modal.close();
-
+        clearFormFields()
     }
     function editTaskForm(){
-        const modal2 = document.querySelector('#modal2');
-        const p = document.createElement('p');
-        p.classList.add('formTitle');
-        p.innerHTML = `Edit Form`;
-        modal2.appendChild(p)
+        const formTitle = document.querySelector('.formTitle');
+        formTitle.textContent = `Edit Form`;
     }
+    function clearFormFields(){
+        
+        document.forms['form'].reset();
+    }
+    function populateDetailsOnEdit(index){
+        let tasks = document.querySelectorAll('.task');
+        let currentTask = tasks[index];
+
+        const taskName = document.querySelector()
+        const taskDescription = userTaskDetailContainer.children[1].textContent.slice(18);
+        const taskDueDate = userTaskDetailContainer.children[2].textContent.slice(10);
+        const taskPriority = userTaskDetailContainer.children[3].textContent.slice(10);
+        const taskNotes = userTaskDetailContainer.children[5].textContent;
+
+        let taskNameField = document.querySelector("#edit-title");
+        let taskDescriptionField = document.querySelector("#edit-description");
+        let taskDueDateField = document.querySelector("#edit-date");
+        let taskPriorityField = document.querySelector("#edit-priority");
+        let taskNotesField = document.querySelector("#edit-notes");
+
+    }
+
+
+
     
 }

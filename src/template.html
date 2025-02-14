@@ -69,8 +69,9 @@
             </div>
         </div>
 
-        <dialog type="form" id="modal2" class="modal" open="">
-            <p class="formTitle">Edit Form</p>
+        <dialog type="form" id="modal2" class="modal" >
+            <form id="form" name="form">
+                <p class="formTitle">Form Input</p>
             <div class="task-name-input">
                 <p>Name:</p>
                 <input required id="name-input" type="text">
@@ -93,8 +94,9 @@
             </div>
             <div class="button-container-modal2">
                 <button id="submitBtn" type="submit" class="add-btn add-project-btn">Add</button>
-                <button class="cancel-btn cancel-project-btn">Cancel</button>
+                <button type="button" class="cancel-btn cancel-project-btn">Cancel</button>
             </div>
+            </form>
         </dialog>
 
         <!-- details dialog -->
